@@ -8,7 +8,7 @@ hexo.extend.filter.register('before_exit', () => {
     if (!hexo.theme.config.check_update) return;
 
     const errorLog = (error) => {
-        hexo.log.warn('无法获取最新版本信息，请访问 https://github.com/renbaoshuo/hexo-theme-pure 了解详情');
+        hexo.log.warn('Unable to obtain the latest version information, please visit https://github.com/renbaoshuo/hexo-theme-pure Learn more');
         hexo.log.debug(error);
     };
 
@@ -43,10 +43,10 @@ hexo.extend.filter.register('before_exit', () => {
                 }
 
                 if (isOutdated) {
-                    hexo.log.warn('检测到主题更新，请前往 https://github.com/renbaoshuo/hexo-theme-pure/releases 页面下载');
-                    hexo.log.warn(`当前版本为 v${current.join('.')}，最新版本为 v${latest.join('.')}`);
+                    hexo.log.warn('A theme update has been detected, please go to https://github.com/renbaoshuo/hexo-theme-pure/releases 页面下载');
+                    hexo.log.warn(`The current version is v${current.join('.')}，最新版本为 v${latest.join('.')}`);
                 } else {
-                    hexo.log.info(`当前使用的是最新版本的主题（v${current.join('.')}）`);
+                    hexo.log.info(`Currently using the latest version of the theme（v${current.join('.')}）`);
                 }
             } catch (err) {
                 errorLog(err);

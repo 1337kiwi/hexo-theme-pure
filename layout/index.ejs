@@ -4,10 +4,10 @@
             <article class="post gt-bg-theme-color-second">
                 <div class="post-left">
                     <% if (post.top) { %>
-                        <span class="sticky-top-flag gt-bg-accent-color-first">置顶</span>
+                        <span class="sticky-top-flag gt-bg-accent-color-first">Top</span>
                     <% } %>
                     <a href="<%- url_for(post.path) %>">
-                        <span class="post-title gt-c-content-color-first"><%= post.title || "(无标题)" %></span>
+                        <span class="post-title gt-c-content-color-first"><%= post.title || "(Untitled)" %></span>
                     </a>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
                         <p><%= post.excerpt.replace(/(<(\/?)(\w+)[^>]*>)|(<!--[\s\S]*?-->)/g ,'').replace(/\s+/g,' ') %></p>
@@ -36,9 +36,9 @@
 
 <div class="pagination-container">
     <% if (page.prev) { %>
-        <a href="<%= url_for(page.prev_link) %>" class="prev-page gt-a-link">上一页</a>
+        <a href="<%= url_for(page.prev_link) %>" class="prev-page gt-a-link">Previous</a>
     <% } %>
     <% if (page.next) { %>
-        <a href="<%= url_for(page.next_link) %>" class="prev-page gt-a-link">下一页</a>
+        <a href="<%= url_for(page.next_link) %>" class="prev-page gt-a-link">Next</a>
     <% } %>
 </div>

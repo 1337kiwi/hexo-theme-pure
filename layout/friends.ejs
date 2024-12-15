@@ -1,10 +1,10 @@
 <div class="post-container">
     <div class="post-detail gt-bg-theme-color-second gt-c-content-color-first">
         <article class="gt-post-content">
-            <h1 class="post-title">友情链接</h1>
+            <h1 class="post-title">Links</h1>
             <div class="post-content">
                 <div class="friends-desc"><%- page.content %></div>
-                <h3 id="linklist">友链列表</h3>
+                <h3 id="linklist">Friend Chain List</h3>
                 <% if (theme.friends) { %>
                     <% theme.friends.forEach(function(friend) { %>
                         <div class="friend-box">
@@ -23,7 +23,7 @@
                         </div>
                     <% }); %>
                 <% } else { %>
-                    暂无友链，快来申请吧！
+                    No friend link yet, come and apply!
                 <% } %>
             </div>
         </article>

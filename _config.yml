@@ -1,18 +1,20 @@
-favicon: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+favicon: '🥝'
+avatar: https://cdn.discordapp.com/avatars/192091646274437120/ea8143662ba16364db32d3bcb767ed5b.webp
 katex: false
 force_https: true
 check_update: true
 
 menus:
-  - name: 首页
+  - name: '~/'
     link: /
-  - name: 归档
-    link: /archives/
-  - name: 标签
-    link: /tags/
-  - name: 友链
-    link: /friends/
+  - name: whoami
+    link: /about/
+  - name: ctf
+    link: /ctf/
+  - name: proj
+    link: /projects/
+  - name: misc 
+    link: /misc/
 post:
   feature: true
 disqus:
@@ -36,11 +38,5 @@ valine:
 web_analytics:
   enable: false
   google: UA-12345678-1
-  baidu: 12345678
 footer: |
-  Footer HTML
-friends:
-  - name: 宝硕博客
-    link: https://blog.baoshuo.ren/
-    logo: https://cdn.jsdelivr.net/npm/bsi@0.0.2/favicon/128x128.png
-    description: 学习，就是发现自己越来越菜的过程。
+  Nothing I say here in any way represents the view of anyone I work with or for. 

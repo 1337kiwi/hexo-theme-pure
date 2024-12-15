@@ -13,7 +13,7 @@
         border-radius: 5px;
 
         .post-title {
-            font-size: 26px;
+            font-size: 36px;
             text-align: center;
             padding: 24px;
             font-weight: normal;
@@ -21,8 +21,8 @@
 
         .post-info {
             text-align: center;
-            font-size: 12px;
             padding-bottom: 24px;
+            font-size: 14px;
 
             .post-tag {
                 padding: 8px;
@@ -241,8 +241,6 @@
     }
 
     pre {
-        margin-bottom: 18px;
-        margin-right: 32px;
 
         & > code {
             letter-spacing: 0px;
@@ -258,6 +256,11 @@
         }
     }
 
+    .highlight {
+        width:940px;
+        overflow:auto;
+    }
+
     p code,
     li code,
     table code {
@@ -267,9 +270,14 @@
         padding: 0.2em 0.4em;
         margin: 0;
         font-size: 85%;
-        background-color: #1b1f230d;
+        background-color: #3e3e3e;
         border-radius: 6px;
         word-break: break-all;
+    }
+
+    p code,
+    li code {
+        color:#81BBF2;
     }
 }
 
