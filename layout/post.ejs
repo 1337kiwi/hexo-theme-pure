@@ -3,8 +3,10 @@
         <article class="gt-post-content">
             <h1 class="post-title"><%= page.title ? page.title : "(Untitled)" %></h1>
             <div class="post-info">
+                <% if (!page.hide_date) { %>
                 <time class="post-time gt-c-content-color-first">
                     · <%= date(page.date) %> ·</time>
+                <% } %>
                 <% if(page.tags) { %>
                     <% page.tags.forEach((tag) => { %>
                         <a href="<%= url_for(tag.path) %>" class="post-tag">
