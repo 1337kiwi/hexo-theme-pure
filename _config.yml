@@ -15,7 +15,7 @@ menus:
     link: /projects/
   - name: misc 
     link: /misc/
-  - name: '/friends/'
+  - name: 'friends/'
     link: https://begaydocrimehave.fun/#kiwi
     target: _blank
 post:
